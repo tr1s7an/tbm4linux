@@ -1,0 +1,18 @@
+{
+    "example_url": "https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz",
+    "version": "1.2.0",
+    "architecture": {
+        "x64": {
+            "url": "https://install.speedtest.net/app/cli/ookla-speedtest-<version>-linux-x86_64.tgz",
+            "asset_name": "ookla-speedtest-<version>-linux-x86_64.tgz",
+            "bin": {
+                "speedtest": "speedtest"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://www.speedtest.net/apps/cli",
+        "pattern": "ookla-speedtest-([0-9\\.]*)-linux-x86_64.tgz"
+    }
+}

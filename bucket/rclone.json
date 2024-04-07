@@ -1,0 +1,18 @@
+{
+    "example_url": "https://github.com/rclone/rclone/releases/download/v1.66.0/rclone-v1.66.0-linux-amd64.zip",
+    "version": "1.66.0",
+    "architecture": {
+        "x64": {
+            "url": "https://github.com/rclone/rclone/releases/download/v<version>/rclone-v<version>-linux-amd64.zip",
+            "asset_name": "rclone-v<version>-linux-amd64.zip",
+            "bin": {
+                "rclone-v<version>-linux-amd64/rclone": "rclone"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/rclone/rclone/releases",
+        "pattern": "href=\\\"/rclone/rclone/tree/v(.*?)\\\""
+    }
+}

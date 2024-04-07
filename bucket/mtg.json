@@ -1,0 +1,18 @@
+{
+    "example_url": "https://github.com/9seconds/mtg/releases/download/v2.1.7/mtg-2.1.7-linux-amd64.tar.gz",
+    "version": "2.1.7",
+    "architecture": {
+        "x64": {
+            "url": "https://github.com/9seconds/mtg/releases/download/v<version>/mtg-<version>-linux-amd64.tar.gz",
+            "asset_name": "mtg-<version>-linux-amd64.tar.gz",
+            "bin": {
+                "mtg-<version>-linux-amd64/mtg": "mtg"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/9seconds/mtg/releases",
+        "pattern": "href=\\\"/9seconds/mtg/tree/v(.*?)\\\""
+    }
+}
