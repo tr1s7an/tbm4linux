@@ -63,8 +63,8 @@ if __name__ == "__main__":
         print(id)
         config_file = f"{BUCKET_PATH}/{id}.json"
         if os.path.exists(config_file):
-            config, formatted_config = read_config(config_file)
             if args.check:
+                config, formatted_config = read_config(config_file)
                 old_version = config["version"]
                 new_version = check_version(config["checkver"])
                 if new_version != old_version:
@@ -74,6 +74,7 @@ if __name__ == "__main__":
                 else:
                     print(f"current version: {old_version}; no update found")
             if args.install:
+                config, formatted_config = read_config(config_file)
                 asset_name = formatted_config["architecture"][ARCHITECTURE]["asset_name"]
                 if not os.path.exists(f"{CACHE_PATH}/{id}"):
                     os.mkdir(f"{CACHE_PATH}/{id}")

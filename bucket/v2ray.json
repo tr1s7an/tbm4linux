@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/v2fly/v2ray-core/releases/download/v5.15.1/v2ray-linux-64.zip",
-    "version": "5.15.1",
+    "version": "5.15.3",
     "architecture": {
         "x64": {
             "url": "https://github.com/v2fly/v2ray-core/releases/download/v<version>/v2ray-linux-64.zip",
