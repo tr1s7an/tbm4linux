@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://github.com/rclone/rclone/releases/download/v<version>/rclone-v<version>-linux-amd64.zip",
             "asset_name": "rclone-v<version>-linux-amd64.zip",
+"extract": true,
             "bin": {
                 "rclone-v<version>-linux-amd64/rclone": "rclone"
             },

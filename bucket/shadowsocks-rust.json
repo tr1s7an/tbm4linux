@@ -1,10 +1,11 @@
 {
     "example_url": "https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.18.2/shadowsocks-v1.18.2.x86_64-unknown-linux-gnu.tar.xz",
-    "version": "1.18.2",
+    "version": "1.18.3",
     "architecture": {
         "x64": {
             "url": "https://github.com/shadowsocks/shadowsocks-rust/releases/download/v<version>/shadowsocks-v<version>.x86_64-unknown-linux-gnu.tar.xz",
             "asset_name": "shadowsocks-v<version>.x86_64-unknown-linux-gnu.tar.xz",
+            "extract": true,
             "bin": {
                 "ssserver": "ssserver",
                 "sslocal": "sslocal"

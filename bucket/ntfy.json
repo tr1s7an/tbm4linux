@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://github.com/binwiederhier/ntfy/releases/download/v<version>/ntfy_<version>_linux_amd64.tar.gz",
             "asset_name": "ntfy_<version>_linux_amd64.tar.gz",
+"extract": true,
             "bin": {
                 "ntfy_<version>_linux_amd64/ntfy": "ntfy"
             },

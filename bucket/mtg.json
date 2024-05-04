@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://github.com/9seconds/mtg/releases/download/v<version>/mtg-<version>-linux-amd64.tar.gz",
             "asset_name": "mtg-<version>-linux-amd64.tar.gz",
+"extract": true,
             "bin": {
                 "mtg-<version>-linux-amd64/mtg": "mtg"
             },

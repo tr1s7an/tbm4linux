@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://go.dev/dl/go<version>.linux-amd64.tar.gz",
             "asset_name": "go<version>.linux-amd64.tar.gz",
+"extract": true,
             "bin": {},
             "folder": {
                 "go": "go"

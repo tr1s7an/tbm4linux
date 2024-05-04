@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://install.speedtest.net/app/cli/ookla-speedtest-<version>-linux-x86_64.tgz",
             "asset_name": "ookla-speedtest-<version>-linux-x86_64.tgz",
+"extract": true,
             "bin": {
                 "speedtest": "speedtest"
             },

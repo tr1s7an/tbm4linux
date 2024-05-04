@@ -1,10 +1,11 @@
 {
     "example_url": "https://github.com/miniflux/v2/releases/download/2.1.2/miniflux-linux-amd64",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "architecture": {
         "x64": {
             "url": "https://github.com/miniflux/v2/releases/download/<version>/miniflux-linux-amd64",
             "asset_name": "miniflux-linux-amd64",
+            "extract": false,
             "bin": {
                 "miniflux-linux-amd64": "miniflux"
             },

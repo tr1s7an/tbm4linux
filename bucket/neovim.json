@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux64.tar.gz",
             "asset_name": "nvim-linux64.tar.gz",
+"extract": true,
             "bin": {},
             "folder": {
                 "nvim-linux64": "nvim"

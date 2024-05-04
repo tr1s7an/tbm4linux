@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://github.com/aristocratos/btop/releases/download/v<version>/btop-x86_64-linux-musl.tbz",
             "asset_name": "btop-x86_64-linux-musl.tbz",
+"extract": true,
             "bin": {
                 "btop/bin/btop": "btop"
             },

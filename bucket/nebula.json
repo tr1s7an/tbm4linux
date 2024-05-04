@@ -5,6 +5,7 @@
         "x64": {
             "url": "https://github.com/slackhq/nebula/releases/download/v<version>/nebula-linux-amd64.tar.gz",
             "asset_name": "nebula-linux-amd64.tar.gz",
+"extract": true,
             "bin": {
                 "nebula": "nebula",
                 "nebula-cert": "nebula-cert"

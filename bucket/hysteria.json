@@ -1,10 +1,11 @@
 {
     "example_url": "https://github.com/apernet/hysteria/releases/download/app%2Fv2.4.0/hysteria-linux-amd64",
-    "version": "2.4.1",
+    "version": "2.4.3",
     "architecture": {
         "x64": {
             "url": "https://github.com/apernet/hysteria/releases/download/app%2Fv<version>/hysteria-linux-amd64",
             "asset_name": "hysteria-linux-amd64",
+            "extract": false,
             "bin": {
                 "hysteria-linux-amd64": "hysteria"
             },
