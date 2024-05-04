@@ -21,7 +21,15 @@ if __name__ == "__main__":
     res = {
         "example_url": example_url,
         "version": version,
-        "architecture": {"x64": {"url": url, "asset_name": asset_name, "bin": {name: name}, "folder": {}}},
+        "architecture": {
+            "x64": {
+                "url": url,
+                "asset_name": asset_name,
+                "extract": False,
+                "bin": {name: name},
+                "folder": {},
+            }
+        },
         "checkver": {"url": f"https://github.com/{owner}/{name}/releases", "pattern": f'href=\\"/{owner}/{name}/tree/v(.*?)\\"'},
     }
 
