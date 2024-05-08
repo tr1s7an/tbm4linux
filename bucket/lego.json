@@ -1,0 +1,19 @@
+{
+    "example_url": "https://github.com/go-acme/lego/releases/download/v4.16.1/lego_v4.16.1_linux_amd64.tar.gz",
+    "version": "4.16.1",
+    "architecture": {
+        "x64": {
+            "url": "https://github.com/go-acme/lego/releases/download/v<version>/lego_v<version>_linux_amd64.tar.gz",
+            "asset_name": "lego_v<version>_linux_amd64.tar.gz",
+            "extract": true,
+            "bin": {
+                "lego": "lego"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/go-acme/lego/releases",
+        "pattern": "href=\\\"/go-acme/lego/tree/v(.*?)\\\""
+    }
+}
