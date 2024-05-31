@@ -3,17 +3,17 @@
     "version": "2.1.7",
     "architecture": {
         "x64": {
-            "url": "https://github.com/9seconds/mtg/releases/download/v<version>/mtg-<version>-linux-amd64.tar.gz",
-            "asset_name": "mtg-<version>-linux-amd64.tar.gz",
-"extract": true,
+            "url": "https://github.com/9seconds/mtg/releases/download/v\u003cversion\u003e/mtg-\u003cversion\u003e-linux-amd64.tar.gz",
+            "asset_name": "mtg-\u003cversion\u003e-linux-amd64.tar.gz",
+            "extract": true,
             "bin": {
-                "mtg-<version>-linux-amd64/mtg": "mtg"
+                "mtg-\u003cversion\u003e-linux-amd64/mtg": "mtg"
             },
             "folder": {}
         }
     },
     "checkver": {
-        "url": "https://github.com/9seconds/mtg/releases",
-        "pattern": "href=\\\"/9seconds/mtg/tree/v(.*?)\\\""
+        "pattern": "href=\\\"/9seconds/mtg/tree/v(.*?)\\\"",
+        "url": "https://github.com/9seconds/mtg/releases"
     }
 }

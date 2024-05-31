@@ -76,7 +76,6 @@ def install(config_file):
         print(f"\t{k} -> {dst}")
         shutil.copy2(k, dst)
         os.chmod(dst, 0o755)
-    os.chdir(cwd)
 
 
 if __name__ == "__main__":
@@ -92,7 +91,6 @@ if __name__ == "__main__":
     else:
         ids = args.ids
 
-    cwd = os.getcwd()
     for idx, id in enumerate(ids):
         print(f"({idx+1:03}/{len(ids):03})[{id}]: ", end="")
         config_file = f"{BUCKET_PATH}/{id}.json"

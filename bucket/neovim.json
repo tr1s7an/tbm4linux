@@ -3,9 +3,9 @@
     "version": "nightly",
     "architecture": {
         "x64": {
-            "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux64.tar.gz",
+            "url": "https://github.com/neovim/neovim/releases/download/\u003cversion\u003e/nvim-linux64.tar.gz",
             "asset_name": "nvim-linux64.tar.gz",
-"extract": true,
+            "extract": true,
             "bin": {},
             "folder": {
                 "nvim-linux64": "nvim"
@@ -13,7 +13,7 @@
         }
     },
     "checkver": {
-        "url": "https://github.com/neovim/neovim/releases",
-        "pattern": "href=\\\"/neovim/neovim/tree/(.*?)\\\""
+        "pattern": "href=\\\"/neovim/neovim/tree/(.*?)\\\"",
+        "url": "https://github.com/neovim/neovim/releases"
     }
 }
