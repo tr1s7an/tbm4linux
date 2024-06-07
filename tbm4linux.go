@@ -155,7 +155,9 @@ func install(id string, configFile string) error {
 	if _, err := os.Stat(workDir); os.IsNotExist(err) {
 		os.Mkdir(workDir, 0755)
 	}
+	cwd, _ := os.Getwd()
 	os.Chdir(workDir)
+	defer os.Chdir(cwd)
 	fmt.Printf("[%s]: downloading...", id)
 	fileResponse, err := http.Get(formattedConfig.Architecture[arch].Url)
 	if err != nil {

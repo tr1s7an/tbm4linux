@@ -32,7 +32,12 @@ def update_config(config, config_file):
 
 
 def check_version(checkver_dict):
-    resp = requests.get(checkver_dict["url"], headers={"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0"})
+    resp = requests.get(
+        checkver_dict["url"],
+        headers={
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0"
+        },
+    )
     html = resp.text
     new_version = re.search(checkver_dict["pattern"], html).group(1)
     return new_version
@@ -43,6 +48,7 @@ def install(config_file):
     asset_name = formatted_config["architecture"][ARCHITECTURE]["asset_name"]
     if not os.path.exists(f"{CACHE_PATH}/{id}"):
         os.mkdir(f"{CACHE_PATH}/{id}")
+    cwd = os.getcwd()
     os.chdir(f"{CACHE_PATH}/{id}")
 
     print("\tdownloading...", end="")
@@ -76,18 +82,27 @@ def install(config_file):
         print(f"\t{k} -> {dst}")
         shutil.copy2(k, dst)
         os.chmod(dst, 0o755)
+    os.chdir(cwd)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Linux Binary Manager")
     parser.add_argument("ids", nargs="+", help="binary id")
     parser.add_argument("--check", "-c", action="store_true", help="Check for updates")
-    parser.add_argument("--install", "-i", action="store_true", help="Install the binary")
-    parser.add_argument("--update", "-u", action="store_true", help="Check for updates and install")
+    parser.add_argument(
+        "--install", "-i", action="store_true", help="Install the binary"
+    )
+    parser.add_argument(
+        "--update", "-u", action="store_true", help="Check for updates and install"
+    )
     args = parser.parse_args()
 
     if args.ids[0] == "*":
-        ids = [file.split(".")[0] for file in os.listdir(BUCKET_PATH) if file.endswith(".json")]
+        ids = [
+            file.split(".")[0]
+            for file in os.listdir(BUCKET_PATH)
+            if file.endswith(".json")
+        ]
     else:
         ids = args.ids
 
