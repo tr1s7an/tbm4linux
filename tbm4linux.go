@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -118,14 +119,18 @@ func main() {
 func readConfig(configFile string) (config Config, formattedConfig Config) {
 	content, _ := os.ReadFile(configFile)
 	json.Unmarshal(content, &config)
-	formattedContent := []byte(strings.ReplaceAll(string(content), "\\u003cversion\\u003e", config.Version))
+	formattedContent := []byte(strings.ReplaceAll(string(content), "<version>", config.Version))
 	json.Unmarshal(formattedContent, &formattedConfig)
 	return config, formattedConfig
 }
 
 func updateConfig(config Config, configFile string) {
-	marshallConfig, _ := json.MarshalIndent(config, "", "    ")
-	os.WriteFile(configFile, marshallConfig, 0644)
+	var buf bytes.Buffer
+	enc := json.NewEncoder(&buf)
+	enc.SetEscapeHTML(false)
+	enc.SetIndent("", "    ")
+	enc.Encode(config)
+	os.WriteFile(configFile, buf.Bytes(), 0644)
 }
 
 func checkVersion(config Config) string {

@@ -1,0 +1,19 @@
+{
+    "example_url": "https://github.com/IrineSistiana/mosdns/releases/download/v5.3.1/mosdns-linux-amd64.zip",
+    "version": "5.3.1",
+    "architecture": {
+        "x64": {
+            "url": "https://github.com/IrineSistiana/mosdns/releases/download/v<version>/mosdns-linux-amd64.zip",
+            "asset_name": "mosdns-linux-amd64.zip",
+            "extract": true,
+            "bin": {
+                "mosdns": "mosdns"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/IrineSistiana/mosdns/releases",
+        "pattern": "href=\"/IrineSistiana/mosdns/tree/v(.*?)\""
+    }
+}

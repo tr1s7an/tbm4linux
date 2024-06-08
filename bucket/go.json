@@ -13,7 +13,7 @@
         }
     },
     "checkver": {
-        "pattern": "/dl/go([0-9\\.]*).linux-amd64.tar.gz",
+        "pattern": "/dl/go([0-9.]*).linux-amd64.tar.gz",
         "url": "https://go.dev/dl/"
     }
 }
