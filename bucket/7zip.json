@@ -1,6 +1,6 @@
 {
     "example_url": "https://www.7-zip.org/a/7z2403-linux-x64.tar.xz",
-    "version": "2406",
+    "version": "2407",
     "architecture": {
         "x64": {
             "url": "https://www.7-zip.org/a/7z<version>-linux-x64.tar.xz",
