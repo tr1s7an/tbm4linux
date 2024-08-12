@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-alpha.21/sing-box-1.10.0-alpha.21-linux-amd64.tar.gz",
-    "version": "1.10.0-alpha.21",
+    "version": "1.10.0-alpha.29",
     "architecture": {
         "x64": {
             "url": "https://github.com/SagerNet/sing-box/releases/download/v<version>/sing-box-<version>-linux-amd64.tar.gz",
@@ -13,7 +13,7 @@
         }
     },
     "checkver": {
-        "url": "https://github.com/SagerNet/sing-box/releases",
-        "pattern": "href=\\\"/SagerNet/sing-box/tree/v(.*?)\\\""
+        "pattern": "href=\\\"/SagerNet/sing-box/tree/v(.*?)\\\"",
+        "url": "https://github.com/SagerNet/sing-box/releases"
     }
 }
