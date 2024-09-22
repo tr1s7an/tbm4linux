@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/XTLS/Xray-core/releases/download/v1.8.23/Xray-linux-64.zip",
-    "version": "1.8.23",
+    "version": "24.9.19",
     "architecture": {
         "x64": {
             "url": "https://github.com/XTLS/Xray-core/releases/download/v<version>/Xray-linux-64.zip",

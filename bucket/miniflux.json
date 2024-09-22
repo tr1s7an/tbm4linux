@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/miniflux/v2/releases/download/2.1.2/miniflux-linux-amd64",
-    "version": "2.1.4",
+    "version": "2.2.0",
     "architecture": {
         "x64": {
             "url": "https://github.com/miniflux/v2/releases/download/<version>/miniflux-linux-amd64",

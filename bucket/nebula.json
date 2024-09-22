@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/slackhq/nebula/releases/download/v1.8.2/nebula-linux-amd64.tar.gz",
-    "version": "1.9.3",
+    "version": "1.9.4",
     "architecture": {
         "x64": {
             "url": "https://github.com/slackhq/nebula/releases/download/v<version>/nebula-linux-amd64.tar.gz",

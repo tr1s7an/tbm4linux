@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/apernet/hysteria/releases/download/app%2Fv2.4.0/hysteria-linux-amd64",
-    "version": "2.5.0",
+    "version": "2.5.1",
     "architecture": {
         "x64": {
             "url": "https://github.com/apernet/hysteria/releases/download/app%2Fv<version>/hysteria-linux-amd64",
