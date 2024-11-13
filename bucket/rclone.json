@@ -1,13 +1,22 @@
 {
     "example_url": "https://github.com/rclone/rclone/releases/download/v1.66.0/rclone-v1.66.0-linux-amd64.zip",
-    "version": "1.68.0",
+    "version": "1.68.1",
     "architecture": {
-        "x64": {
+        "x86_64": {
             "url": "https://github.com/rclone/rclone/releases/download/v<version>/rclone-v<version>-linux-amd64.zip",
             "asset_name": "rclone-v<version>-linux-amd64.zip",
             "extract": true,
             "bin": {
                 "rclone-v<version>-linux-amd64/rclone": "rclone"
+            },
+            "folder": {}
+        },
+        "aarch64": {
+            "url": "https://github.com/rclone/rclone/releases/download/v<version>/rclone-v<version>-linux-arm64.zip",
+            "asset_name": "rclone-v<version>-linux-arm64.zip",
+            "extract": true,
+            "bin": {
+                "rclone-v<version>-linux-arm64/rclone": "rclone"
             },
             "folder": {}
         }

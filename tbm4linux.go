@@ -11,6 +11,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"regexp"
+	"runtime"
 	"strings"
 	"sync"
 )
@@ -36,7 +37,11 @@ var (
 	folderPath        = filepath.Join(homeDir, ".local")
 	extractScriptPath = "/usr/local/bin/extract.sh"
 
-	arch = "x64"
+	archMap = map[string]string{
+		"amd64": "x86_64",
+		"arm64": "aarch64",
+	}
+	arch = archMap[runtime.GOARCH]
 )
 
 const (

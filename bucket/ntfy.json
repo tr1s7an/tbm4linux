@@ -2,12 +2,21 @@
     "example_url": "https://github.com/binwiederhier/ntfy/releases/download/v2.10.0/ntfy_2.10.0_linux_amd64.tar.gz",
     "version": "2.11.0",
     "architecture": {
-        "x64": {
+        "x86_64": {
             "url": "https://github.com/binwiederhier/ntfy/releases/download/v<version>/ntfy_<version>_linux_amd64.tar.gz",
             "asset_name": "ntfy_<version>_linux_amd64.tar.gz",
             "extract": true,
             "bin": {
                 "ntfy_<version>_linux_amd64/ntfy": "ntfy"
+            },
+            "folder": {}
+        },
+        "aarch64": {
+            "url": "https://github.com/binwiederhier/ntfy/releases/download/v<version>/ntfy_<version>_linux_arm64.tar.gz",
+            "asset_name": "ntfy_<version>_linux_arm64.tar.gz",
+            "extract": true,
+            "bin": {
+                "ntfy_<version>_linux_arm64/ntfy": "ntfy"
             },
             "folder": {}
         }

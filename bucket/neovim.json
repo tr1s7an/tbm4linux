@@ -2,7 +2,7 @@
     "example_url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz",
     "version": "nightly",
     "architecture": {
-        "x64": {
+        "x86_64": {
             "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux64.tar.gz",
             "asset_name": "nvim-linux64.tar.gz",
             "extract": true,

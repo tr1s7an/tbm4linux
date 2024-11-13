@@ -3,6 +3,7 @@
 import argparse
 import json
 import os
+import platform
 import re
 import shutil
 
@@ -14,7 +15,7 @@ BINARY_PATH = os.path.expanduser("~/.local/bin")
 FOLDER_PATH = os.path.expanduser("~/.local")
 EXTRACT_SCRIPT_PATH = "/usr/local/bin/extract.sh"
 
-ARCHITECTURE = "x64"
+ARCHITECTURE = platform.machine()
 
 
 def read_config(config_file):
@@ -45,7 +46,10 @@ def check_version(checkver_dict):
 
 def install(config_file):
     _, formatted_config = read_config(config_file)
-    asset_name = formatted_config["architecture"][ARCHITECTURE]["asset_name"]
+    try:
+        asset_name = formatted_config["architecture"][ARCHITECTURE]["asset_name"]
+    except KeyError:
+        return
     if not os.path.exists(f"{CACHE_PATH}/{id}"):
         os.mkdir(f"{CACHE_PATH}/{id}")
     cwd = os.getcwd()

@@ -1,10 +1,19 @@
 {
     "example_url": "https://go.dev/dl/go1.22.2.linux-amd64.tar.gz",
-    "version": "1.23.1",
+    "version": "1.23.3",
     "architecture": {
-        "x64": {
+        "x86_64": {
             "url": "https://go.dev/dl/go<version>.linux-amd64.tar.gz",
             "asset_name": "go<version>.linux-amd64.tar.gz",
+            "extract": true,
+            "bin": {},
+            "folder": {
+                "go": "go"
+            }
+        },
+        "aarch64": {
+            "url": "https://go.dev/dl/go<version>.linux-arm64.tar.gz",
+            "asset_name": "go<version>.linux-arm64.tar.gz",
             "extract": true,
             "bin": {},
             "folder": {

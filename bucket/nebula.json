@@ -2,9 +2,19 @@
     "example_url": "https://github.com/slackhq/nebula/releases/download/v1.8.2/nebula-linux-amd64.tar.gz",
     "version": "1.9.4",
     "architecture": {
-        "x64": {
+        "x86_64": {
             "url": "https://github.com/slackhq/nebula/releases/download/v<version>/nebula-linux-amd64.tar.gz",
             "asset_name": "nebula-linux-amd64.tar.gz",
+            "extract": true,
+            "bin": {
+                "nebula": "nebula",
+                "nebula-cert": "nebula-cert"
+            },
+            "folder": {}
+        },
+        "aarch64": {
+            "url": "https://github.com/slackhq/nebula/releases/download/v<version>/nebula-linux-arm64.tar.gz",
+            "asset_name": "nebula-linux-arm64.tar.gz",
             "extract": true,
             "bin": {
                 "nebula": "nebula",
