@@ -1,16 +1,7 @@
 {
     "example_url": "https://github.com/XTLS/Xray-core/releases/download/v1.8.23/Xray-linux-64.zip",
-    "version": "24.11.11",
+    "version": "25.6.8",
     "architecture": {
-        "x86_64": {
-            "url": "https://github.com/XTLS/Xray-core/releases/download/v<version>/Xray-linux-64.zip",
-            "asset_name": "Xray-linux-64.zip",
-            "extract": true,
-            "bin": {
-                "xray": "xray"
-            },
-            "folder": {}
-        },
         "aarch64": {
             "url": "https://github.com/XTLS/Xray-core/releases/download/v<version>/Xray-linux-arm64-v8a.zip",
             "asset_name": "Xray-linux-arm64-v8a.zip",
@@ -19,10 +10,19 @@
                 "xray": "xray"
             },
             "folder": {}
+        },
+        "x86_64": {
+            "url": "https://github.com/XTLS/Xray-core/releases/download/v<version>/Xray-linux-64.zip",
+            "asset_name": "Xray-linux-64.zip",
+            "extract": true,
+            "bin": {
+                "xray": "xray"
+            },
+            "folder": {}
         }
     },
     "checkver": {
-        "url": "https://github.com/XTLS/Xray-core/releases",
-        "pattern": "href=\\\"/XTLS/Xray-core/tree/v(.*?)\\\""
+        "pattern": "href=\\\"/XTLS/Xray-core/tree/v(.*?)\\\"",
+        "url": "https://github.com/XTLS/Xray-core/releases"
     }
 }

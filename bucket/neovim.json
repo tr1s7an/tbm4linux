@@ -1,14 +1,23 @@
 {
-    "example_url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz",
-    "version": "nightly",
+    "example_url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz",
+    "version": "v0.11.3",
     "architecture": {
-        "x86_64": {
-            "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux64.tar.gz",
-            "asset_name": "nvim-linux64.tar.gz",
+        "aarch64": {
+            "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux-arm64.tar.gz",
+            "asset_name": "nvim-linux-arm64.tar.gz",
             "extract": true,
             "bin": {},
             "folder": {
-                "nvim-linux64": "nvim"
+                "nvim-linux-arm64": "nvim"
+            }
+        },
+        "x86_64": {
+            "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux-x86_64.tar.gz",
+            "asset_name": "nvim-linux-x86_64.tar.gz",
+            "extract": true,
+            "bin": {},
+            "folder": {
+                "nvim-linux-x86_64": "nvim"
             }
         }
     },
