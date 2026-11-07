@@ -1,0 +1,19 @@
+{
+    "example_url": "https://github.com/jeessy2/ddns-go/releases/download/v6.17.0/ddns-go_6.17.0_linux_arm64.tar.gz",
+    "version": "6.17.7",
+    "architecture": {
+        "x64": {
+            "url": "https://github.com/jeessy2/ddns-go/releases/download/v<version>/ddns-go_<version>_linux_arm64.tar.gz",
+            "asset_name": "ddns-go_<version>_linux_arm64.tar.gz",
+            "extract": true,
+            "bin": {
+                "ddns-go": "ddns-go"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/jeessy2/ddns-go/releases",
+        "pattern": "href=\\\"/jeessy2/ddns-go/tree/v(.*?)\\\""
+    }
+}

@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/rclone/rclone/releases/download/v1.66.0/rclone-v1.66.0-linux-amd64.zip",
-    "version": "1.70.3",
+    "version": "1.76.0",
     "architecture": {
         "aarch64": {
             "url": "https://github.com/rclone/rclone/releases/download/v<version>/rclone-v<version>-linux-arm64.zip",

@@ -1,10 +1,10 @@
 {
-    "example_url": "https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-x86_64-linux-musl.tbz",
-    "version": "1.4.4",
+    "example_url": "https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-x86_64-unknown-linux-musl.tar.gz",
+    "version": "1.4.8",
     "architecture": {
         "aarch64": {
-            "url": "https://github.com/aristocratos/btop/releases/download/v<version>/btop-aarch64-linux-musl.tbz",
-            "asset_name": "btop-aarch64-linux-musl.tbz",
+            "url": "https://github.com/aristocratos/btop/releases/download/v<version>/btop-aarch64-unknown-linux-musl.tar.gz",
+            "asset_name": "btop-aarch64-unknown-linux-musl.tar.gz",
             "extract": true,
             "bin": {
                 "btop/bin/btop": "btop"
@@ -12,8 +12,8 @@
             "folder": {}
         },
         "x86_64": {
-            "url": "https://github.com/aristocratos/btop/releases/download/v<version>/btop-x86_64-linux-musl.tbz",
-            "asset_name": "btop-x86_64-linux-musl.tbz",
+            "url": "https://github.com/aristocratos/btop/releases/download/v<version>/btop-x86_64-unknown-linux-musl.tar.gz",
+            "asset_name": "btop-x86_64-unknown-linux-musl.tar.gz",
             "extract": true,
             "bin": {
                 "btop/bin/btop": "btop"

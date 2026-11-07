@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/go-acme/lego/releases/download/v4.16.1/lego_v4.16.1_linux_amd64.tar.gz",
-    "version": "4.24.0",
+    "version": "5.6.0",
     "architecture": {
         "aarch64": {
             "url": "https://github.com/go-acme/lego/releases/download/v<version>/lego_v<version>_linux_arm64.tar.gz",

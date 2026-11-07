@@ -1,0 +1,19 @@
+{
+    "example_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.15/mihomo-linux-arm64-v1.19.15.gz",
+    "version": "1.19.33",
+    "architecture": {
+        "aarch64": {
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v<version>/mihomo-linux-arm64-v<version>.gz",
+            "asset_name": "mihomo-linux-arm64-v<version>.gz",
+            "extract": true,
+            "bin": {
+                "mihomo-linux-arm64-v<version>": "mihomo"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/MetaCubeX/mihomo/releases",
+        "pattern": "href=\\\"/MetaCubeX/mihomo/tree/v(.*?)\\\""
+    }
+}

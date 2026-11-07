@@ -1,9 +1,9 @@
 {
-    "example_url": "https://github.com/apernet/hysteria/releases/download/app%2Fv2.4.0/hysteria-linux-amd64",
-    "version": "2.6.2",
+    "example_url": "https://github.com/HyNetworks/hysteria/releases/download/app%2Fv2.4.0/hysteria-linux-amd64",
+    "version": "2.13.0",
     "architecture": {
         "aarch64": {
-            "url": "https://github.com/apernet/hysteria/releases/download/app%2Fv<version>/hysteria-linux-arm64",
+            "url": "https://github.com/HyNetworks/hysteria/releases/download/app%2Fv<version>/hysteria-linux-arm64",
             "asset_name": "hysteria-linux-arm64",
             "extract": false,
             "bin": {
@@ -12,7 +12,7 @@
             "folder": {}
         },
         "x86_64": {
-            "url": "https://github.com/apernet/hysteria/releases/download/app%2Fv<version>/hysteria-linux-amd64",
+            "url": "https://github.com/HyNetworks/hysteria/releases/download/app%2Fv<version>/hysteria-linux-amd64",
             "asset_name": "hysteria-linux-amd64",
             "extract": false,
             "bin": {
@@ -22,7 +22,7 @@
         }
     },
     "checkver": {
-        "pattern": "href=\"/apernet/hysteria/tree/app/v(.*?)\"",
-        "url": "https://github.com/apernet/hysteria/releases"
+        "pattern": "href=\"/HyNetworks/hysteria/tree/app/v(.*?)\"",
+        "url": "https://github.com/HyNetworks/hysteria/releases"
     }
 }

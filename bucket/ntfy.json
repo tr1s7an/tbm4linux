@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/binwiederhier/ntfy/releases/download/v2.10.0/ntfy_2.10.0_linux_amd64.tar.gz",
-    "version": "2.13.0",
+    "version": "2.37.2",
     "architecture": {
         "aarch64": {
             "url": "https://github.com/binwiederhier/ntfy/releases/download/v<version>/ntfy_<version>_linux_arm64.tar.gz",

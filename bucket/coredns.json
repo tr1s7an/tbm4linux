@@ -1,0 +1,28 @@
+{
+    "example_url": "https://github.com/coredns/coredns/releases/download/v1.13.1/coredns_1.13.1_linux_arm64.tgz",
+    "version": "1.15.0",
+    "architecture": {
+        "aarch64": {
+            "url": "https://github.com/coredns/coredns/releases/download/v<version>/coredns_<version>_linux_arm64.tgz",
+            "asset_name": "coredns_<version>_linux_arm64.tgz",
+            "extract": true,
+            "bin": {
+                "coredns": "coredns"
+            },
+            "folder": {}
+        },
+        "x86_64": {
+            "url": "https://github.com/coredns/coredns/releases/download/v<version>/coredns_<version>_linux_amd64.tgz",
+            "asset_name": "coredns_<version>_linux_amd64.tgz",
+            "extract": true,
+            "bin": {
+                "coredns": "coredns"
+            },
+            "folder": {}
+        }
+    },
+    "checkver": {
+        "pattern": "href=\\\"/coredns/coredns/tree/v(.*?)\\\"",
+        "url": "https://github.com/coredns/coredns/releases"
+    }
+}

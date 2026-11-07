@@ -1,6 +1,6 @@
 {
     "example_url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz",
-    "version": "v0.11.3",
+    "version": "nightly",
     "architecture": {
         "aarch64": {
             "url": "https://github.com/neovim/neovim/releases/download/<version>/nvim-linux-arm64.tar.gz",

@@ -1,6 +1,6 @@
 {
     "example_url": "https://go.dev/dl/go1.22.2.linux-amd64.tar.gz",
-    "version": "1.24.5",
+    "version": "1.27.3",
     "architecture": {
         "aarch64": {
             "url": "https://go.dev/dl/go<version>.linux-arm64.tar.gz",
